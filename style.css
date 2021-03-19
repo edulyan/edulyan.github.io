@@ -1,0 +1,453 @@
+/* Fonts */
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'ProximaNova_regular';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'ProximaNova_regular', sans-serif;
+}
+/*colors*/
+/*Basic setting*/
+html {
+  font-size: 10px;
+}
+a:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #FF7378;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+.button {
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  background-color: #fcb303;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e3a103;
+}
+/*Оформление форм*/
+.form {
+  /*Поле для ввода*/
+  /*Подписи к полям*/
+  /*Кнопка отправить заявку*/
+}
+.form-input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+}
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.6rem;
+}
+/*Typography*/
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  margin: 2rem 0 10rem;
+  text-align: center;
+}
+.section-header_light {
+  color: #ffffff;
+}
+.section-header h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
+.section-header p {
+  font-size: 1.4rem;
+}
+.intro {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+.intro-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.intro-media-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*main*/
+.main {
+  padding: 3rem 0 5rem;
+  /*Главная форма*/
+}
+.main-title {
+  color: #A99400;
+}
+.main-content {
+  margin-top: 10rem;
+}
+.main-content h1 {
+  margin-top: 0;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 4rem;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+.main-subtitle {
+  color: #A99400;
+  margin-bottom: 4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2.4rem;
+}
+.main span {
+  color: #ffffff;
+  display: inline-block;
+  padding: 3rem 5rem;
+  font-size: 1.8rem;
+  background-color: #A99400;
+  text-align: center;
+}
+.main span strong {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3rem;
+}
+.main-trigger {
+  color: #A99400;
+  display: block;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-top: 3.5rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+.main-form {
+  text-align: center;
+  padding: 4rem 5rem;
+  background-color: #ffffff;
+  /*Загаловок формы*/
+  /*Подпись под кнопкой*/
+}
+.main-form-header {
+  margin-bottom: 4rem;
+  font-size: 1.5rem;
+}
+.main-form-header strong {
+  font-size: 2rem;
+}
+.main-form small {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.phone-block {
+  text-align: right;
+}
+.phone-link {
+  display: inline-block;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  height: 7rem;
+  line-height: 7rem;
+  color: #A99400;
+}
+/* Оформление секции с преимуществами */
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.features-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.features-img {
+  height: 8rem;
+  margin-bottom: 3rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.slick-active {
+  outline: none;
+}
+.arrow {
+  top: 50%;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev {
+  left: 0;
+  background: url(../img/left.svg) center no-repeat;
+  background-size: 100%;
+}
+.next {
+  right: 0;
+  background: url(../img/right.svg) center no-repeat;
+  background-size: 100%;
+}
+.pog {
+  margin-top: 8rem;
+}
+.circle {
+  display: inline-block;
+  background-color: #46b814;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #46b814;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.9rem;
+}
+/*Оформление модальных глаголов*/
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+.popup-form {
+  margin-top: 3rem;
+  padding: 0;
+}
+.popup-close {
+  position: absolute;
+  top: -1.65rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-header {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+@media (max-width: 1199px) {
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: center left;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: scaleY(-50%);
+            transform: scaleY(-50%);
+  }
+  .price-button {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .price-header-btn {
+    max-top: 0;
+    margin-bottom: 2rem;
+  }
+  .price-block {
+    margin-top: 2rem;
+  }
+  .section-header_light {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .pog {
+    margin-top: 5rem;
+  }
+  .pog_123 {
+    margin-top: 5rem;
+  }
+}
+@-webkit-keyframes move {
+  /*Первый кадр анимации*/
+  from {
+    margin-left: 0;
+  }
+  /*Промежуточные кадры анимации*/
+  10% {
+    margin-left: 20px;
+  }
+  /*Конечный кадр анимации*/
+  to {
+    margin-left: 400px;
+  }
+}
+@keyframes move {
+  /*Первый кадр анимации*/
+  from {
+    margin-left: 0;
+  }
+  /*Промежуточные кадры анимации*/
+  10% {
+    margin-left: 20px;
+  }
+  /*Конечный кадр анимации*/
+  to {
+    margin-left: 400px;
+  }
+}
+@-webkit-keyframes bg-color {
+  /*Первый кадр анимации*/
+  from {
+    background-color: red;
+  }
+  /*Промежуточные кадры анимации*/
+  50% {
+    background-color: black;
+  }
+  /*Конечный кадр анимации*/
+  to {
+    background-color: blue;
+  }
+}
+@keyframes bg-color {
+  /*Первый кадр анимации*/
+  from {
+    background-color: red;
+  }
+  /*Промежуточные кадры анимации*/
+  50% {
+    background-color: black;
+  }
+  /*Конечный кадр анимации*/
+  to {
+    background-color: blue;
+  }
+}
+.box {
+  margin-left: 3rem;
+  width: 100px;
+  height: 100px;
+  background-color: #A99400;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}

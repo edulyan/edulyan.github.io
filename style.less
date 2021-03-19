@@ -1,0 +1,492 @@
+/* Fonts */	
+
+@font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ProximaNova_regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.reg() {
+	font-family: 'ProximaNova_regular', sans-serif;
+}
+
+.bold() {
+	font-family: 'ProximaNova_bold', sans-serif;
+}
+
+body{
+	.reg();
+}
+
+/*colors*/
+@btn-color: #fcb303;
+@icons-color: #46b814;
+@text: #1a1820;
+@danger: #ff0000;
+@bg-light: #f5f5f5;
+@light: #fff;
+@border-input: #dddddd;
+
+/*Basic setting*/
+html{
+	font-size: 10px;
+}
+
+a:hover {
+	text-decoration-line: none;
+	color: #FF7378;
+}
+
+button, input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+
+.button{
+	padding: 1rem 3rem;
+	border-radius: 8px;
+	font-size: 1.2rem;
+	background-color: @btn-color;
+	color: @light;
+	border: none;
+	text-transform: uppercase;
+	transition: all 0.4s;
+
+	&:hover {
+		cursor: pointer;
+		background-color: darken(@btn-color, 5%)
+	}
+}
+
+/*Оформление форм*/ 
+.form {
+	/*Поле для ввода*/
+       &-input{
+       	display: block;
+       	margin: 2rem 0;
+       	width: 100%;
+       	border: 1px solid @border-input;
+       	border-radius: 5px;
+       	padding: 1.5rem;
+       }
+      /*Подписи к полям*/
+      label {
+      	position: absolute;
+      	left: 50%;
+      	transform: translateX(-50%) translateY(-50%);
+      	padding: 0.5rem;
+      	background-color: @light;
+      	font-size: 1.3rem;
+      } 
+    /*Кнопка отправить заявку*/
+    &-btn {
+    	display: block;
+    	width: 100%;
+    	height: 5.5rem;
+    	font-size: 1.6rem;
+    }
+}
+
+/*Typography*/
+section{
+	padding: 10rem 0;
+}
+
+.section-header {
+	&_light {
+		color: @light;
+	}
+	h2 {
+	  .bold();
+	  font-size: 3.6rem;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+	margin: 2rem 0 10rem;
+	text-align: center;
+} 
+
+.intro{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+
+		&-media{
+			position: absolute;
+			top: 0;
+			left: 0;
+		    width: 100%;
+		    height: 100%;
+		    overflow: hidden;
+		}
+	}
+
+.intro-media-video{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+}
+
+/*main*/
+.main{
+	padding: 3rem 0 5rem;
+	// background: #fff url(../img/Auto_main.jpg) center center no-repeat;
+	// background-size: cover;
+	&-title{
+		color: #A99400;
+	}
+	&-content {
+		margin-top: 10rem;
+	  h1{
+	  	margin-top: 0;
+	  	margin-bottom: 4rem;
+		.bold();
+		font-size: 4rem;
+		line-height: 1.45;
+		text-transform: uppercase;
+	    } 
+    }
+    &-subtitle {
+    	color: #A99400;
+    	margin-bottom: 4rem;
+    	.bold();
+		font-size: 2.4rem;
+    }
+       span {
+       	color: @light;
+       	display: inline-block;
+       	padding: 3rem 5rem;
+       	font-size: 1.8rem;
+       	background-color: #A99400;
+       	text-align: center;
+       	strong {
+       		.bold();
+       		font-size: 3rem;
+       	}
+       }
+    &-trigger {
+    	color: #A99400;
+    	display: block;
+    	.bold();
+    	margin-top: 3.5rem;
+    	font-size: 2.2rem;
+    	text-transform: uppercase;
+    }   
+
+/*Главная форма*/
+    &-form {
+    	text-align: center;
+    	padding: 4rem 5rem;
+    	background-color: @light;
+    	
+/*Загаловок формы*/
+      &-header {
+      	margin-bottom: 4rem;
+      	font-size: 1.5rem;
+       strong {
+       	font-size: 2rem;
+        }
+       } 
+      
+    /*Подпись под кнопкой*/
+    small {
+    	display: block;
+    	margin-top: 1.5rem;
+    	font-size: 0.9rem;
+     }  
+    }
+}
+.header{
+	
+}
+
+.wrap{
+	display: table;
+	width: 100%;
+	height: 7rem;
+	&-block{
+		display: table-cell;
+		vertical-align:middle;
+		text-align: right;
+	}
+}
+
+.phone {
+	&-block {
+		text-align: right;
+	}
+	&-link {
+	display: inline-block;
+	.bold();
+	font-size: 2rem;
+	height: 7rem;
+	line-height: 7rem;
+	color: #A99400;
+    }
+}
+
+/* Оформление секции с преимуществами */
+
+.features {
+	// background: #fff url(../img/Auto_main.jpg) center center no-repeat;
+	// background-size: cover;
+	&-block {
+		text-align: center;
+	  h3 {
+	  	.bold();
+	  	font-size: 2rem;
+	  	margin-bottom: 3rem;
+	  }	
+
+	  p {
+	  	display: inline-block;
+	  	width: 80%;
+	  	font-size: 1.4rem; 
+	  }
+	}
+	&-img {
+	  height: 8rem;
+	  margin-bottom: 3rem;
+		img{
+		display: block;
+		margin: 0 auto;
+	    } 
+	}
+}
+
+.slick-active {
+	outline: none;
+}
+
+.arrow {
+	top: 50%;
+	transform: scaleY(-50%);
+	position: absolute;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	
+}
+
+.prev {
+	left: 0;
+	background: url(../img/left.svg) center no-repeat;
+	background-size: 100%;
+}
+
+.next {
+	right: 0;
+	background: url(../img/right.svg) center no-repeat;
+	background-size: 100%;
+}
+
+
+.pog{
+	margin-top: 8rem; 
+}
+
+.circle {
+	display: inline-block;
+	background-color: @icons-color;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	&-border {
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		padding: 0.3rem;
+		border: 2px solid @icons-color;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 4rem;
+		color: @light;
+		.bold();
+		font-size: 1.9rem;
+	}
+}
+
+/*Оформление модальных глаголов*/
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+	&-content{
+		position: fixed;
+	    left: 50%;
+	    top: 10%;
+	    background-color: @light;
+	    transform: translateX(-50%);
+	    padding: 4rem 6rem;
+	}
+	&-form {
+		margin-top: 3rem;
+		padding: 0;
+	}
+	&-close {
+		position: absolute;
+		top: -1.65rem;
+		right: -2rem;
+		width: 2rem;
+		text-align: center;
+		border: none;
+		background-color: transparent;
+		font-size: 3rem;
+		color: @light;
+	}
+	&-content {
+		text-align: center;
+	}
+	&-header {
+		.bold();
+	}
+}
+
+@media (max-width: 1199px) {
+	.feedback {
+		&-form {
+			padding: 3rem 5rem;
+		}
+    .fotorama {
+    	margin-bottom: 3rem;
+    }
+	}
+}
+
+@media (max-width: 991px){
+	.main {
+		background-position: center left;
+	}
+
+	.phone-block {
+		text-align: center;
+	}
+
+	.main-content {
+		margin-top: 3rem;
+	}
+
+	.main-title {
+		padding-bottom: 3rem;
+		text-align: center;
+	}
+	.left-arrow {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: scaleY(-50%);
+	}
+	.price {
+		&-button {
+			text-align: center;
+			padding: 2rem 0;
+		}
+		&-header-btn {
+			max-top: 0;
+			margin-bottom: 2rem;
+		}
+		&-block {
+			margin-top: 2rem;
+		}
+	}
+	.section-header_light {
+		margin-bottom: 0;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.header {
+		text-align: center;
+	}
+
+	.wrap-block {
+		text-align: center;
+	}
+	.scheme {
+		background: none;
+		text-align: center;
+	}
+	.pog {
+		margin-top: 5rem;
+	}
+	.pog_123 {
+	    margin-top: 5rem;
+    }
+}
+
+
+@keyframes move {
+	/*Первый кадр анимации*/
+	from {
+		margin-left: 0;
+	}
+	/*Промежуточные кадры анимации*/
+	10% {
+		margin-left: 20px;
+	}
+	/*Конечный кадр анимации*/
+	to {
+		margin-left: 400px;
+	}
+}
+
+@keyframes bg-color {
+	/*Первый кадр анимации*/
+	from {
+		background-color: red;
+	}
+	/*Промежуточные кадры анимации*/
+	50% {
+		background-color: black;
+	}
+	/*Конечный кадр анимации*/
+	to {
+		background-color: blue;
+	}
+}
+
+.box {
+	margin-left: 3rem;
+	width: 100px;
+	height: 100px;
+	background-color: #A99400;
+	animation-iteration-count: infinite;
+}
