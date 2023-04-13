@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css" />
+	<title>Document</title>
+</head>
+<body>
+	<div class="main">
+		<h1 class="main-title">Услуга MegaTravel</h1>
+		
+		<div class="table">
+			<div class="slider-container">
+				<div>
+					<label for="days-slider">Количество дней:</label>
+					<span id="days-value"></span>
+				</div>
+				<input type="range" id="days-slider" min="0" max="3" step="1" value="0">
+			
+				<div>
+					<label for="internet-slider">Интернет:</label>
+					<span id="internet-value"></span>
+				</div>
+				<input type="range" id="internet-slider" min="0" max="6" step="1" value="0">
+			
+				<div>
+					<label for="minutes-slider">Минуты на все времена:</label>
+					<span id="minutes-value"></span>
+				</div>
+				<input type="range" id="minutes-slider" min="0" max="5" step="1" value="0">
+		
+				<div class="result">
+					<label class="price" for="total-price">Стоимость:</label>
+					<span id="total-price-value">0р</span>
+				</div>
+			</div>
+
+			<div class="plus">
+				+
+			</div>
+			
+			<div class="subscription">
+				<p class="subs-title">Подписка и безлимит на:</p>
+
+				<div class="apps">
+					<p>Книги</p>
+					<p>«В пути»</p>
+					<p>Музыка</p>
+					<p>Плюс</p>
+					<p>Подкасты</p>
+					<p>Mamba</p>
+					<p>Start</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
